@@ -58,12 +58,12 @@ const Sidebar = () => {
           <div className="bottom-item recent-entry">
             <img src={assets.history_icon} alt="HistoryIcon" />
             {sidebarExtended ? <p>Activity</p> : null}
-          </div>
+          </div>     
           <div className="bottom-item recent-entry">
             <img src={assets.setting_icon} alt="SettingIcon" />
             {sidebarExtended ? <p>Settings</p> : null}
           </div>
-        </div>
+        </div> 
       </div>
     </>
   );
