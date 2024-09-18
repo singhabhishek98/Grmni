@@ -18,3 +18,10 @@
       opacity: 1;
     }
 }
+.search-box {
+  margin-bottom: 16px; /* Adjust this value to increase or decrease the gap */
+}
+
+.suggestion-box {
+  margin-bottom: 16px;
+}

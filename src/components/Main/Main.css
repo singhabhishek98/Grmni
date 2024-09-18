@@ -27,10 +27,12 @@
     font-weight: 500;
     padding: 20px;
 }
-.main .greet span{
-    background: -webkit-linear-gradient(16deg, #4B90FF, #FF5546);
+.main .greet span {
+    background: linear-gradient(16deg, #4B90FF, #FF5546); /* Fallback for non-WebKit browsers */
+    background: -webkit-linear-gradient(16deg, #4B90FF, #FF5546); /* WebKit-specific */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /* WebKit-specific */
+    color: transparent; /* Fallback color for browsers that don't support text fill color */
 }
 .main .cards{
     display: grid;
@@ -138,7 +140,7 @@
     border-radius: 4px;
     border: none;
     background-color: #F6F7F8;
-    background: linear-gradient(to right, #9ED7FF, #FFFFFF, #9ED7FF);
+    background: linear-gradient(to right, #9ED7FF, black, #9ED7FF);
     background-size: 800px 50px;
     height: 20px;
     animation: loader 3s infinite linear;
