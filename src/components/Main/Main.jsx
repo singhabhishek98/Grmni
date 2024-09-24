@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { Context } from "../../context/Context";
 
 const Main = () => {
-  // destructuring the object of context
+   // destructuring the object of context
   const {
     input,
     setInput,
